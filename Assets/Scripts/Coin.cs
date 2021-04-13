@@ -14,5 +14,6 @@ public class Coin : MonoBehaviour
     {
         soundHub.PlayCoinSound();
         Destroy(this.gameObject);
+        FindObjectOfType<GameState>().updateScore();
     }
 }
